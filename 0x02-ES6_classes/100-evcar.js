@@ -8,8 +8,8 @@ class EVCar extends Car {
   }
 
   cloneCar() {
-    // Create a new instance of Car with undefined attributes
-    const carClone = new Car();
+    // Use 'this' to access attributes
+    const carClone = new Car(this._brand, this._motor, this._color);
     return carClone;
   }
 }
